@@ -1,0 +1,98 @@
+html, body { height: 100%; width: 100%; margin: 0; }
+body{
+    padding: 0px;
+    background: #e3f7fe;
+}
+.todo-wrapper-div{
+    width: 75%;
+    margin: 0px auto;
+}
+.input-wrapper-div{
+    width: 74%;
+    margin: 0 auto;
+
+}
+input['text']{
+
+}
+.ul-wrapper-div{
+    margin: 0 auto;
+}
+.todo-input{
+    width: 65%;
+    height: 45px;
+    border-top-left-radius: 46px;
+    outline: none;
+    border: 2px solid #cbe3ef;
+    padding-left: 5%;
+    font-size: 20px;
+}
+.add-button{
+    width: 25%;
+    height: 51px;
+    border-top-right-radius: 45px;
+    padding: 0px;
+    border: none;
+    vertical-align: top;
+    outline: none;
+    /* display: inline-block; */
+    background: #72cef5;
+    color: #fff;
+}
+@media (min-width: 400px){
+    .todo-input{
+        width: 63%;
+    }
+    .add-button{
+        width: 31%
+    }
+}
+ul{
+    padding-left: 0px;
+    /* width: 65%; */
+    margin: 0 auto;
+}
+@media (max-width : 713px){
+    .add-button{
+        width: 30%;
+    }
+}
+@media (max-width : 400px){
+    .add-button{
+        width: 27%;
+    }
+}
+
+li{
+    width: 70%;
+    /* border-radius: 5px; */
+    margin: 0px auto;
+    list-style: none;
+    background-color: #fff;
+    padding: 4% 2%;
+    border-width: 1px;
+    border-color: #cbe3ef;
+    border-style: solid;
+    height: auto;
+    overflow: hidden;
+    transition: all 1s;
+    font-weight: 700;
+    color: #695757;
+    /* border-left: 5px solid #72cef5; */
+}
+li:hover{
+    width: 73%;
+    -webkit-box-shadow: 0px 0px 25px #ecf3fd;
+    box-shadow: 0px 0px 25px #72cef5eb;
+    border-left: 5px solid #72cef5;
+}
+.item-buttons{
+    float: right;
+}
+.for-icons{
+    background: transparent;
+    border: none;
+    width : 50px;
+    cursor: pointer;
+    outline: none;
+}
