@@ -3,6 +3,7 @@ import './app.css';
 import edit from './images/edit.svg';
 import delte from './images/delete.svg';
 
+
 export class Forms extends React.Component{
     constructor(props){
         super(props);
@@ -56,12 +57,11 @@ export class Forms extends React.Component{
                         {
                             (this.state.items.length > 0) ?
                             this.state.items.map((value, indx)=>{
-                                return(
-                                <li key = {indx}>
+                                return(                               <li key = {indx}>
                                     {value}
                                     <span className = "item-buttons">
-                                        <button className = "for-icons" onClick = {()=>{this.updateItem(value, indx)}}><img src = {edit} /></button>
-                                        <button className = "for-icons" onClick = {()=>{this.deleteItem(indx)}}><img src = {delte} /></button>
+                                        <button className = "for-icons" onClick = {()=>{this.updateItem(value, indx)}}><img src = {edit} alt="icon"/></button>
+                                        <button className = "for-icons" onClick = {()=>{this.deleteItem(indx)}}><img src = {delte} alt="icon"/></button>
                                     </span>
                                 </li>
                             );
